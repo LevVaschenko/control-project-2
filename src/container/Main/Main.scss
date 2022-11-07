@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.city-life-box {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.city-life-box>.city-life-box-outer {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.city-life-box>.city-life-box-outer>.city-life-box-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.city-life-box-content {
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex: 1;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.city-life {
+    margin-bottom: 32px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+// .city-life-block-tiles, .tiles-outer {
+//     grid-gap: 30px;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-areas:
+//         'tile1 tile2 tile2'
+//         'tile3 tile4 tile5';
+//     grid-auto-rows: initial;
+//     display: grid;
+// }
+
+.image1, .image2 {
+    width: 520px;
+}
+
+.image3, .image4, .image5 {
+    width: 333.33px;
+    height: 350px;
+}
+
+.image1:hover, .image2:hover, .image3:hover, .image4:hover, .image5:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
