@@ -12,6 +12,8 @@ import Container from '@mui/material/Container'
 import logo from 'assets/logo.png'
 import './Logo.scss'
 import './Buttons.scss'
+import './Container.scss'
+import UpperSlider from './Upper-slider'
 
 type Props = {}
 
@@ -60,9 +62,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar(props: Props) {
     return (
         <>
-            <Container>
+            <Container className="container">
                 <Box sx={{ flexGrow: 1 }}>
-                    <AppBar position="static">
+                    <AppBar position="static" className="app-bar">
                         <Toolbar>
                             <IconButton
                                 size="large"
@@ -77,7 +79,7 @@ export default function SearchAppBar(props: Props) {
                                 variant="h6"
                                 noWrap
                                 component="div"
-                                className='logo'
+                                className="logo"
                                 sx={{
                                     flexGrow: 1,
                                 }}
@@ -95,19 +97,20 @@ export default function SearchAppBar(props: Props) {
                             </Search>
                         </Toolbar>
                     </AppBar>
-                    <div className='navigation-bar-col'>
+                    <div className="navigation-bar-col">
                         <div>
-                            <ul className='navigation'>
-                                <li className='menu-columns'>Demos</li>
-                                <li className='menu-item'>Features</li>
-                                <li className='menu-item'>Post</li>
-                                <li className='menu-item'>Categories</li>
-                                <li className='menu-item'>Shop</li>
+                            <ul className="navigation">
+                                <li className="menu-columns">Demos</li>
+                                <li className="menu-item">Features</li>
+                                <li className="menu-item">Post</li>
+                                <li className="menu-item">Categories</li>
+                                <li className="menu-item">Shop</li>
                             </ul>
                         </div>
                     </div>
                 </Box>
             </Container>
+            <UpperSlider />
         </>
     )
 }

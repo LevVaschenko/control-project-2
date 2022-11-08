@@ -1,0 +1,30 @@
+.slider-image-1 {
+    object-fit: cover;
+    object-position: 50% 50%;
+    max-width: none;
+    // position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1905px;
+    height: 1000px;
+    overflow: hidden;
+    pointer-events: none;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+    margin-top: 0px;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: -1;
+}
+
+.slider-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-text-1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}

@@ -39,16 +39,6 @@
     font-family: 'Raleway';
 }
 
-// .city-life-block-tiles, .tiles-outer {
-//     grid-gap: 30px;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-areas:
-//         'tile1 tile2 tile2'
-//         'tile3 tile4 tile5';
-//     grid-auto-rows: initial;
-//     display: grid;
-// }
-
 .image1, .image2 {
     width: 520px;
 }
@@ -58,7 +48,8 @@
     height: 350px;
 }
 
-.image1:hover, .image2:hover, .image3:hover, .image4:hover, .image5:hover {
-    opacity: 0.8;
+.image:hover {
+    opacity: 0.9;
     cursor: pointer;
+    transition: 0.25s ease;
 }
