@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-.city-life-box {
+.city-life-box, .lifestyle-box {
     margin-top: 64px;
     margin-bottom: 64px;
 }
 
-.city-life-box>.city-life-box-outer {
+.city-life-box>.city-life-box-outer, .lifestyle-box>.lifestyle-box-outer {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
@@ -13,14 +13,14 @@
     margin-left: auto;
 }
 
-.city-life-box>.city-life-box-outer>.city-life-box-inner {
+.city-life-box>.city-life-box-outer>.city-life-box-inner, .lifestyle-box>.lifestyle-box-outer>.lifestyle-box-inner {
     display: flex;
     flex-wrap: wrap;
     margin-right: -20px;
     margin-left: -20px;
 }
 
-.city-life-box-content {
+.city-life-box-content, .lifestyle-box-content {
     position: relative;
     width: 100%;
     padding-right: 20px;
@@ -30,7 +30,7 @@
     min-width: 0;
 }
 
-.city-life {
+.city-life, .lifestyle {
     margin-bottom: 32px;
     margin-top: 0;
     display: flex;
