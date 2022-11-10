@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-.slider {
+.bottom-slider {
     width: 100%;
     height: 740px;
     color: white;
-    background-image: url(/assets/slider-picture-1.jpeg);
+    background-image: url(/assets/bottom-slider-1.jpeg);
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover;
@@ -40,16 +40,10 @@
     width: 92px;
     height: 35px;
     background-color: #262626;
-    margin-top: 15px;
-    font-family: 'Raleway';
-    cursor: pointer;
-}
-
-.button {
-    width: 92px;
-    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    margin-top: 15px;
+    font-family: 'Raleway';
+    cursor: pointer;
 }

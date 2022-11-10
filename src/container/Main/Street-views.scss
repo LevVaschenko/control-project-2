@@ -1,0 +1,76 @@
+.street-views1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 27px;
+    position: relative;
+    padding-left: 16px;
+    padding-top: 16px;
+    margin-right: 16px;
+    justify-items: stretch;
+    width: 1112px;
+}
+
+.street-views-post-1, .street-views-image-1 {
+    width: 247.5px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.street-views-post-2, .street-views-image-2 {
+    width: 247.5px;
+    grid-area: 2 / 1 / 3 / 2;
+}
+.street-views-post-3, .street-views-image-3 {
+    width: 520px;
+    height: 530px;
+    grid-area: 1 / 2 / 3 / 3;
+    margin-right: 9px;
+}
+.street-views-post-4, .street-views-image-4 {
+    width: 247px;
+    grid-area: 1 / 3 / 2 / 4;
+}
+.street-views-post-5, .street-views-image-5 {
+    width: 247px;
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.street-views-info-1, .street-views-info-2, .street-views-info-3, .street-views-info-4, .street-views-info-5 {
+    top: 0px;
+}
+
+.street-views-info-1, .street-views-info-2{
+    width: 247.5px;
+    height: 250px;
+}
+
+.street-views-info-4, .street-views-info-5 {
+    width: 247px;
+}
+
+.street-views-info-3 {
+    width: 520px;
+    height: 520px;
+}
+
+.street-views-image-1:hover, .street-views-image-2:hover, .street-views-image-3:hover, .street-views-image-4:hover, .street-views-image-5:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.street-views-title-1, .street-views-title-2, .street-views-title-3, .street-views-title-4, .street-views-title-5 {
+    margin-top: 0.5rem;
+    font-size: 24px;
+    color: white;
+    font-family: 'Raleway';
+    line-height: 1.125;
+}
+
+.street-views-info-4, .street-views-info-5 {
+    height: 247px;
+}
+
+.street-views-title-3 {
+    font-size: 32px;
+}
