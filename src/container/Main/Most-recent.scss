@@ -1,0 +1,159 @@
+.most-recent1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 27px;
+    position: relative;
+    padding-left: 16px;
+    padding-top: 16px;
+    margin-right: 16px;
+    justify-items: stretch;
+    width: 1112px;
+}
+
+.most-recent-post-1, .most-recent-image-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-2, .most-recent-image-2 {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-3, .most-recent-image-3 {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-4, .most-recent-image-4 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-5, .most-recent-image-5 {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-6, .most-recent-image-6 {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-7, .most-recent-image-7 {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-8, .most-recent-image-8 {
+    grid-area: 3 / 2 / 4 / 3;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-9, .most-recent-image-9 {
+    grid-area: 3 / 3 / 4 / 4;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-10, .most-recent-image-10 {
+    grid-area: 4 / 1 / 5 / 2;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-11, .most-recent-image-11 {
+    grid-area: 4 / 2 / 5 / 3;
+    width: 339.3px;
+    height: 450px;
+}
+.most-recent-post-12, .most-recent-image-12 {
+    grid-area: 4 / 3 / 5 / 4;
+    width: 339.3px;
+    height: 450px;
+}
+
+.most-recent-info-1, .most-recent-info-2, .most-recent-info-3, .most-recent-info-4, .most-recent-info-5, .most-recent-info-6, .most-recent-info-7, .most-recent-info-8, .most-recent-info-9, .most-recent-info-10, .most-recent-info-11, .most-recent-info-12{
+    top: 0px;
+    width: 339.3px;
+    height: 450px;
+    padding: 25px;
+}
+
+.most-recent-title-1, .most-recent-title-2, .most-recent-title-3, .most-recent-title-4, .most-recent-title-5, .most-recent-title-6, .most-recent-title-7, .most-recent-title-8, .most-recent-title-9, .most-recent-title-10, .most-recent-title-11, .most-recent-title-12 {
+    margin-top: 0.5rem;
+    font-size: 24px;
+    color: white;
+    font-family: 'Raleway';
+    line-height: 1.125;
+    padding-top: 5px;
+}
+
+.post-share, .title-share {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.title-share {
+    margin-top: 0 !important;
+}
+
+.post-share .title-share .cs-icon-arrow-right {
+    margin-left: 1.5rem;
+}
+
+.cs-icon-arrow-right, .arrow-right-image {
+    width: 20px;
+    height: 10px;
+    margin-bottom: 3px;
+}
+
+.title-share {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-family: 'Raleway';
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.social-medias {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.facebook-logo, .twitter-logo, .pinterest-logo {
+    width: 16px;
+    height: 16px;
+    margin-left: 25px;
+}
+
+.twitter-logo {
+    height: 15px;
+}
+
+.load-more-button {
+    font-size: 13px;
+    width: 1100px;
+    height: 35px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-family: "Raleway";
+}
+
+.load-more {
+    width: 92px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    color: white;
+    cursor: pointer;
+}

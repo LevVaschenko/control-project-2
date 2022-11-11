@@ -1,0 +1,109 @@
+.blog-image, .blog-picture {
+    width: 500px;
+    margin-right: 30px;
+}
+
+.blog-picture:hover {
+    opacity: 0.85;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.blog-post-1, .blog-post-2, .blog-post-3, .blog-post-4, .blog-post-5, .blog-post-6 {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.blog-post a {
+    color: black;
+    font-size: 16px;
+}
+
+.blog-post-title, .blog-post-description {
+    margin-top: 0.5rem;
+    font-size: 32px;
+    color: black;
+    font-family: 'Raleway';
+    line-height: 1.125;
+    padding-top: 5px;
+}
+
+.blog-post-description {
+    color: #777777;
+    font-size: 14.4px;
+    line-height: 1.5;
+}
+
+.view-post-button {
+    margin-top: 25px;
+}
+
+.view-post {
+    font-size: 13px;
+    width: 92px;
+    height: 35px;
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Raleway';
+    cursor: pointer;
+}
+
+.blog-post-share, .blog-title-share {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.blog-title-share {
+    margin-top: 0 !important;
+}
+
+.blog-post-share .title-share .cs-icon-arrow-right {
+    margin-left: 1.5rem;
+}
+
+.cs-icon-arrow-right, .blog-arrow-right-image {
+    width: 20px;
+    height: 10px;
+    margin-bottom: 3px;
+    .blog-arrow-right-image {
+        margin-left: 10px;
+    }
+}
+
+.blog-title-share {
+    color: black !important;
+    font-family: 'Raleway';
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.social-medias {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.facebook-logo, .twitter-logo, .pinterest-logo {
+    width: 16px;
+    height: 16px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.twitter-logo {
+    height: 15px;
+}
+
+.facebook-logo:hover, .twitter-logo:hover, .pinterest-logo:hover {
+    opacity: 0.6;
+    transition: 0.25s all ease-in-out;
+}
