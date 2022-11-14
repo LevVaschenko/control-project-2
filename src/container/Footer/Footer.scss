@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+.instagram-images {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.footer-image-1, .footer-image-2, .footer-image-3, .footer-image-4, .footer-image-5, .footer-image-6 {
+    width: 250px;
+    height: 315px;
+    width: 100%;
+    display: block;
+    transition: .25s;
+}
+
+.footer-image-1:hover, .footer-image-2:hover, .footer-image-3:hover, .footer-image-4:hover, .footer-image-5:hover, .footer-image-6:hover{
+    opacity: 0.75;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.q, .qq, .qqq, .qqqq, .qqqqq, .qqqqqq {
+    width: 2000px;
+}
+
+.q:hover .middle-1{
+    opacity: 1;
+}
+
+.qq:hover .middle-2{
+    opacity: 1;
+}
+
+.qqq:hover .middle-3{
+    opacity: 1;
+}
+
+.qqqq:hover .middle-4{
+    opacity: 1;
+}
+
+.qqqqq:hover .middle-5{
+    opacity: 1;
+}
+
+.qqqqqq:hover .middle-6{
+    opacity: 1;
+}
+
+.footer-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories a {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: "Raleway";
+}
+
+.categories a:hover {
+    opacity: 0.5;
+    transition: 0.15s all ease-in-out;
+}
+
+.footer-description {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #a0a0a0;
+    font-family: 'Raleway';
+}
+
+@mixin middle-settings {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    cursor: pointer;
+}
+
+.middle-1 {
+    @include middle-settings();
+    left: 7.5%;
+}
+
+.middle-2 {
+    @include middle-settings();
+    left: 24%;
+}
+
+.middle-3 {
+    @include middle-settings();
+    left: 40.5%;
+}
+
+.middle-4 {
+    @include middle-settings();
+    left: 57.5%;
+}
+
+.middle-5 {
+    @include middle-settings();
+    left: 74%;
+}
+
+.middle-6 {
+    @include middle-settings();
+    left: 91%;
+}
+
+.footer-like, .middle-1, .middle-2, .middle-3, .middle-4, .middle-5, .middle-6 {
+    width: 25px;
+    height: 22.5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-right: 10px;
+    font-family: 'Raleway';
+}

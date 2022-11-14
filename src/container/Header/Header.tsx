@@ -100,11 +100,10 @@ export default function SearchAppBar(props: Props) {
                     <div className="navigation-bar-col">
                         <div>
                             <ul className="navigation">
-                                <li className="menu-columns">Demos</li>
-                                <li className="menu-item">Features</li>
-                                <li className="menu-item">Post</li>
-                                <li className="menu-item">Categories</li>
-                                <li className="menu-item">Shop</li>
+                                <li className="menu-columns">Lifestyle</li>
+                                <li className="menu-item">Travel</li>
+                                <li className="menu-item">Style</li>
+                                <li className="menu-item">Interior</li>
                             </ul>
                         </div>
                     </div>

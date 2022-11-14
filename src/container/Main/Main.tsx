@@ -1257,7 +1257,7 @@ const Main = (props: Props) => {
                                                     </div>
                                                 </div>
                                             </Grid>
-                                            <div className="load-more-button">
+                                            <div className="load-more-button most-recent-button">
                                                 <a className="load-more">
                                                     Load More
                                                 </a>
@@ -1723,7 +1723,7 @@ const Main = (props: Props) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="load-more-button">
+                                        <div className="load-more-button blog-button">
                                             <a className="load-more">
                                                 Load More
                                             </a>
