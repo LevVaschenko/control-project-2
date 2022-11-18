@@ -1,18 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+@mixin Bottom-SliderSettings() {
+    width: 100%;
+    height: 1000px;
+    color: white;    
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+}
+
+.slider-1{
+    @include Bottom-SliderSettings();
+    background-image: url(/assets/bottom-slider-1.jpeg);
+}
+
+.slider-2 {
+    @include Bottom-SliderSettings();
+    // height: 828px !important;
+    background-image: url(/assets/bottom-slider-2.jpeg);
+}
+
+.slider-3 {
+    @include Bottom-SliderSettings();
+    background-image: url(/assets/bottom-slider-3.jpeg);
+}
+
 .bottom-slider {
     width: 100%;
-    height: 740px;
+    // height: 940px;
     color: white;
-    background-image: url(/assets/bottom-slider-1.jpeg);
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover;
 }
 
 .slider-text {
-    padding-top: 500px;
+    padding-top: 660px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -33,6 +57,7 @@
     font-family: 'Raleway';
     font-weight: 400;
     margin-top: 15px;
+    width: 760px;
 }
 
 .slider-button {

@@ -9,6 +9,13 @@ import './Bottom-slider.scss'
 import './Street-views.scss'
 import './Most-recent.scss'
 import './Blog.scss'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 type Props = {}
 
@@ -349,22 +356,69 @@ const Main = (props: Props) => {
                     </div>
                 </Box>
             </Container>
-            <div className="bottom-slider">
-                <Container maxWidth="lg">
-                    <div className="row">
-                        <div className="slider-text">
-                            <div className="slider-category">Style</div>
-                            <div className="slider-title">
-                                3 Tips for Becoming a Unique and Successful
-                                Photographer
-                            </div>
-                            <div className="slider-button">
-                                <a className="button" href='http://localhost:3000/'>View Post</a>
+            <Swiper
+                className="swiper"
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={50}
+                slidesPerView={1}
+                navigation={true}
+                loop={true}
+                cssMode={true}
+                pagination={{
+                    clickable: true,
+                }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+            >
+                <SwiperSlide className="slider-1">
+                    <Container maxWidth="lg">
+                        <div className="row">
+                            <div className="slider-text">
+                                <div className="slider-category">Style</div>
+                                <div className="slider-title">
+                                    3 Tips for Becoming a Unique and Successful
+                                    Photographer
+                                </div>
+                                <div className="slider-button">
+                                    <a className="button">View Post</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </Container>
-            </div>
+                    </Container>
+                </SwiperSlide>
+                <SwiperSlide className="slider-2">
+                    <Container maxWidth="lg">
+                        <div className="row">
+                            <div className="slider-text">
+                                <div className="slider-category">Lifestyle</div>
+                                <div className="slider-title">
+                                    How to Shoot a Self Portrait to Support Your
+                                    Brand Identity
+                                </div>
+                                <div className="slider-button">
+                                    <a className="button">View Post</a>
+                                </div>
+                            </div>
+                        </div>
+                    </Container>
+                </SwiperSlide>
+                <SwiperSlide className="slider-3">
+                    <Container maxWidth="lg">
+                        <div className="row">
+                            <div className="slider-text">
+                                <div className="slider-category">Interior</div>
+                                <div className="slider-title">
+                                    How to Use Vibrant Colors in Photography
+                                    With Great Success
+                                </div>
+                                <div className="slider-button">
+                                    <a className="button">View Post</a>
+                                </div>
+                            </div>
+                        </div>
+                    </Container>
+                </SwiperSlide>
+            </Swiper>
             <Container>
                 <Box sx={{ flexGrow: 1 }} className="street-views-box">
                     <div className="street-views-box-outer">
@@ -465,7 +519,10 @@ const Main = (props: Props) => {
                                                                     Guide
                                                                 </h1>
                                                                 <div className="slider-button">
-                                                                    <a className="button" href='http://localhost:3000/'>
+                                                                    <a
+                                                                        className="button"
+                                                                        href="http://localhost:3000/"
+                                                                    >
                                                                         View
                                                                         Post
                                                                     </a>
@@ -1263,7 +1320,10 @@ const Main = (props: Props) => {
                                                 </div>
                                             </Grid>
                                             <div className="load-more-button most-recent-button">
-                                                <a className="load-more" href='http://localhost:3000/'>
+                                                <a
+                                                    className="load-more"
+                                                    href="http://localhost:3000/"
+                                                >
                                                     Load More
                                                 </a>
                                             </div>
@@ -1324,7 +1384,10 @@ const Main = (props: Props) => {
                                                             button…
                                                         </div>
                                                         <div className="view-post-button">
-                                                            <a className="view-post" href='http://localhost:3000/'>
+                                                            <a
+                                                                className="view-post"
+                                                                href="http://localhost:3000/"
+                                                            >
                                                                 View Post
                                                             </a>
                                                         </div>
@@ -1371,7 +1434,7 @@ const Main = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href='http://localhost:3000/'>
+                                                                    <a href="http://localhost:3000/">
                                                                         Interior
                                                                     </a>
                                                                 </li>
@@ -1397,7 +1460,10 @@ const Main = (props: Props) => {
                                                             button…
                                                         </div>
                                                         <div className="view-post-button">
-                                                            <a className="view-post" href='http://localhost:3000/'>
+                                                            <a
+                                                                className="view-post"
+                                                                href="http://localhost:3000/"
+                                                            >
                                                                 View Post
                                                             </a>
                                                         </div>
@@ -1444,7 +1510,7 @@ const Main = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href='http://localhost:3000/'>
+                                                                    <a href="http://localhost:3000/">
                                                                         Travel
                                                                     </a>
                                                                 </li>
@@ -1471,7 +1537,10 @@ const Main = (props: Props) => {
                                                             button…
                                                         </div>
                                                         <div className="view-post-button">
-                                                            <a className="view-post" href='http://localhost:3000/'>
+                                                            <a
+                                                                className="view-post"
+                                                                href="http://localhost:3000/"
+                                                            >
                                                                 View Post
                                                             </a>
                                                         </div>
@@ -1518,7 +1587,7 @@ const Main = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href='http://localhost:3000/'>
+                                                                    <a href="http://localhost:3000/">
                                                                         Lifestyle
                                                                     </a>
                                                                 </li>
@@ -1545,7 +1614,10 @@ const Main = (props: Props) => {
                                                             button…
                                                         </div>
                                                         <div className="view-post-button">
-                                                            <a className="view-post" href='http://localhost:3000/'>
+                                                            <a
+                                                                className="view-post"
+                                                                href="http://localhost:3000/"
+                                                            >
                                                                 View Post
                                                             </a>
                                                         </div>
@@ -1592,7 +1664,7 @@ const Main = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href='http://localhost:3000/'>
+                                                                    <a href="http://localhost:3000/">
                                                                         Style
                                                                     </a>
                                                                 </li>
@@ -1618,7 +1690,10 @@ const Main = (props: Props) => {
                                                             button…
                                                         </div>
                                                         <div className="view-post-button">
-                                                            <a className="view-post" href='http://localhost:3000/'>
+                                                            <a
+                                                                className="view-post"
+                                                                href="http://localhost:3000/"
+                                                            >
                                                                 View Post
                                                             </a>
                                                         </div>
@@ -1665,7 +1740,7 @@ const Main = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href='http://localhost:3000/'>
+                                                                    <a href="http://localhost:3000/">
                                                                         Travel
                                                                     </a>
                                                                 </li>
@@ -1691,7 +1766,10 @@ const Main = (props: Props) => {
                                                             button…
                                                         </div>
                                                         <div className="view-post-button">
-                                                            <a className="view-post" href='http://localhost:3000/'>
+                                                            <a
+                                                                className="view-post"
+                                                                href="http://localhost:3000/"
+                                                            >
                                                                 View Post
                                                             </a>
                                                         </div>
@@ -1729,7 +1807,10 @@ const Main = (props: Props) => {
                                             </div>
                                         </div>
                                         <div className="load-more-button blog-button">
-                                            <a className="load-more" href='http://localhost:3000/'>
+                                            <a
+                                                className="load-more"
+                                                href="http://localhost:3000/"
+                                            >
                                                 Load More
                                             </a>
                                         </div>

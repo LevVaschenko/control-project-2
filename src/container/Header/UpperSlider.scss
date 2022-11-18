@@ -1,18 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-.slider {
+@mixin SliderSettings() {
     width: 100%;
     height: 740px;
-    color: white;
-    background-image: url(/assets/slider-picture-1.jpeg);
+    color: white;    
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover;
 }
 
+.slider1{
+    @include SliderSettings();
+    background-image: url(/assets/slider-picture-1.jpeg);
+}
+
+.slider2 {
+    @include SliderSettings();
+    // height: 828px !important;
+    background-image: url(/assets/slider-picture-2.jpeg);
+}
+
+.slider3 {
+    @include SliderSettings();
+    background-image: url(/assets/slider-picture-3.jpeg);
+}
+
 .slider-text {
-    padding-top: 500px;
+    padding-bottom: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -33,6 +48,7 @@
     font-family: 'Raleway';
     font-weight: 400;
     margin-top: 15px;
+    width: 760px;
 }
 
 .slider-button {
@@ -51,5 +67,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     color: white;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+    color: #ffffff;
 }
