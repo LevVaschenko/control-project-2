@@ -18,7 +18,7 @@ const Footer = (props: Props) => {
                             className="footer-image-1"
                         />
                         <div className="middle-1">
-                            <img src={like} className="footer-like" />
+                            <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">5</div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ const Footer = (props: Props) => {
                             className="footer-image-2"
                         />
                         <div className="middle-2">
-                            <img src={like} className="footer-like" />
+                            <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">6</div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const Footer = (props: Props) => {
                             className="footer-image-3"
                         />
                         <div className="middle-3">
-                            <img src={like} className="footer-like" />
+                            <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">4</div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const Footer = (props: Props) => {
                             className="footer-image-4"
                         />
                         <div className="middle-4">
-                            <img src={like} className="footer-like" />
+                            <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">1</div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const Footer = (props: Props) => {
                             className="footer-image-5"
                         />
                         <div className="middle-5">
-                            <img src={like} className="footer-like" />
+                            <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">4</div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Footer = (props: Props) => {
                             className="footer-image-5"
                         />
                         <div className="middle-6">
-                            <img src={like} className="footer-like" />
+                            <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">5</div>
                         </div>
                     </div>
@@ -81,12 +81,12 @@ const Footer = (props: Props) => {
                 <Container maxWidth="lg">
                     <div className="footer-section">
                         <div className="info">
-                            <img src={logo}></img>
+                            <img src={logo} alt=""></img>
                             <nav className="categories">
-                                <a href="">LIFESTYLE</a>
-                                <a href="">TRAVEL</a>
-                                <a href="">STYLE</a>
-                                <a href="">INTERIOR</a>
+                                <a href="http://localhost:3000/">LIFESTYLE</a>
+                                <a href="http://localhost:3000/">TRAVEL</a>
+                                <a href="http://localhost:3000/">STYLE</a>
+                                <a href="http://localhost:3000/">INTERIOR</a>
                             </nav>
                         </div>
                         <div className="footer-description">

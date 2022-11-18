@@ -84,7 +84,7 @@ export default function SearchAppBar(props: Props) {
                                     flexGrow: 1,
                                 }}
                             >
-                                <img src={logo}></img>
+                                <img src={logo} alt=""></img>
                             </Typography>
                             <Search>
                                 <SearchIconWrapper>
