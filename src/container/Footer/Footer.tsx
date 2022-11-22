@@ -12,69 +12,81 @@ const Footer = (props: Props) => {
             <div className="footer">
                 <div className="instagram-images">
                     <div className="q">
-                        <img
-                            src="images/footer-image-1.jpeg"
-                            alt=""
-                            className="footer-image-1"
-                        />
+                        <a href="https://www.instagram.com/p/BudeAMoglqR/">
+                            <img
+                                src="images/footer-image-1.jpeg"
+                                alt=""
+                                className="footer-image-1"
+                            />
+                        </a>
                         <div className="middle-1">
                             <img src={like} alt="" className="footer-like" />
-                            <div className="like-counter">5</div>
+                            <div className="like-counter">4</div>
                         </div>
                     </div>
                     <div className="qq">
-                        <img
-                            src="images/footer-image-2.jpeg"
-                            alt=""
-                            className="footer-image-2"
-                        />
+                        <a href="https://www.instagram.com/p/BksFRJZAxG0/">
+                            <img
+                                src="images/footer-image-2.jpeg"
+                                alt=""
+                                className="footer-image-2"
+                            />
+                        </a>
                         <div className="middle-2">
                             <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">6</div>
                         </div>
                     </div>
                     <div className="qqq">
-                        <img
-                            src="images/footer-image-3.jpeg"
-                            alt=""
-                            className="footer-image-3"
-                        />
+                        <a href="https://www.instagram.com/p/BksFPdqAx6W/">
+                            <img
+                                src="images/footer-image-3.jpeg"
+                                alt=""
+                                className="footer-image-3"
+                            />
+                        </a>
                         <div className="middle-3">
                             <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">4</div>
                         </div>
                     </div>
                     <div className="qqqq">
-                        <img
-                            src="images/footer-image-4.jpeg"
-                            alt=""
-                            className="footer-image-4"
-                        />
+                        <a href="https://www.instagram.com/p/BksFNYcg3g6/">
+                            <img
+                                src="images/footer-image-4.jpeg"
+                                alt=""
+                                className="footer-image-4"
+                            />
+                        </a>
                         <div className="middle-4">
+                            <img src={like} alt="" className="footer-like" />
+                            <div className="like-counter">2</div>
+                        </div>
+                    </div>
+                    <div className="qqqqq">
+                        <a href="https://www.instagram.com/p/BksFK2RAxyk/">
+                            <img
+                                src="images/footer-image-5.jpeg"
+                                alt=""
+                                className="footer-image-5"
+                            />
+                        </a>
+                        <div className="middle-5">
                             <img src={like} alt="" className="footer-like" />
                             <div className="like-counter">1</div>
                         </div>
                     </div>
-                    <div className="qqqqq">
-                        <img
-                            src="images/footer-image-5.jpeg"
-                            alt=""
-                            className="footer-image-5"
-                        />
-                        <div className="middle-5">
-                            <img src={like} alt="" className="footer-like" />
-                            <div className="like-counter">4</div>
-                        </div>
-                    </div>
                     <div className="qqqqqq">
-                        <img
-                            src="images/footer-image-6.jpeg"
-                            alt=""
-                            className="footer-image-5"
-                        />
+                        <a href="https://www.instagram.com/p/BksE1DzA7My/">
+                            <img
+                                src="images/footer-image-6.jpeg"
+                                alt=""
+                                className="footer-image-5"
+                            />
+                        </a>
                         <div className="middle-6">
                             <img src={like} alt="" className="footer-like" />
-                            <div className="like-counter">5</div>
+                            <div className="like-counter">1</div>
                         </div>
                     </div>
                 </div>

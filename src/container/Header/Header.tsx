@@ -13,7 +13,9 @@ import logo from 'assets/logo.png'
 import './Logo.scss'
 import './Buttons.scss'
 import './Container.scss'
-import UpperSlider from './Upper-slider'
+import UpperSlider from '../Main/Upper-slider'
+import Menu from 'components/Menu'
+import { MenuItem } from '@mui/material'
 
 type Props = {}
 
@@ -79,12 +81,12 @@ export default function SearchAppBar(props: Props) {
                                 variant="h6"
                                 noWrap
                                 component="div"
-                                className="logo"
+                                className="logo-container"
                                 sx={{
                                     flexGrow: 1,
                                 }}
                             >
-                                <img src={logo} alt=""></img>
+                                <img src={logo} alt="" className="logo"></img>
                             </Typography>
                             <Search>
                                 <SearchIconWrapper>
@@ -97,19 +99,9 @@ export default function SearchAppBar(props: Props) {
                             </Search>
                         </Toolbar>
                     </AppBar>
-                    <div className="navigation-bar-col">
-                        <div>
-                            <ul className="navigation">
-                                <li className="menu-columns">Lifestyle</li>
-                                <li className="menu-item">Travel</li>
-                                <li className="menu-item">Style</li>
-                                <li className="menu-item">Interior</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Menu />
                 </Box>
             </Container>
-            <UpperSlider />
         </>
     )
 }

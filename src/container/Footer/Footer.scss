@@ -127,7 +127,17 @@
     width: 25px;
     height: 22.5px;
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 3px;
-    margin-right: 10px;
+    // border-radius: 3px;
+    // margin-right: 10px;
     font-family: 'Raleway';
+}
+
+.like-counter {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
