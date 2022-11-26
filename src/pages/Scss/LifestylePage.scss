@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+[class*="col-"] {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col-4 {
+    width: 33.33333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-8 {
+    width: 66.66667%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.lifestyle-page-container {
+    display: flow-root;
+    margin-top: 50px;
+}
+
+.name {
+    font-family: 'Raleway';
+    font-size: 48px;
+}
+
+.lifestyle-quantity {
+    font-size: 16px;
+    color: #a8a8a8;
+    font-family: 'Cormorant Garamond';
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 35px;
+}
+
+.lifestyle-page-right-info {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: right;
+}
+
+.right-info {
+    background-image: url(/assets/bottom-slider-3.jpeg);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.post-categories {
+    font-family: 'Cormorant Garamond';
+    font-size: 16px;
+}
+
+.entry-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.entry-title-pages {
+    font-size: 43.6px;
+    font-family: 'Raleway';
+    line-height: 50px;
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+
+.content {
+    padding-left: 0px;
+}
+
+.content2 {
+    padding-left: 42px;
+}
+
+.post-inner123 {
+    margin-top: 2rem;
+}
+
+.post-title-pages {
+    font-size: 24px;
+    font-family: 'Raleway';
+    color: #000000;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
