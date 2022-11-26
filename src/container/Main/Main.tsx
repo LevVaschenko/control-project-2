@@ -12,13 +12,13 @@ type Props = {}
 const Main = (props: Props) => {
     return (
         <main>
-                <Routes>
-                    <Route path='/' element={<Home/>}/>
-                    <Route path='/lifestyle' element={<LifestylePage/>}/>
-                    <Route path='/travel' element={<TravelPage/>}/>
-                    <Route path='/style' element={<StylePage/>}/>
-                    <Route path='/interior' element={<InteriorPage/>}/>
-                </Routes>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/lifestyle" element={<LifestylePage />} />
+                <Route path="/travel" element={<TravelPage />} />
+                <Route path="/style" element={<StylePage />} />
+                <Route path="/interior" element={<InteriorPage />} />
+            </Routes>
         </main>
     )
 }
