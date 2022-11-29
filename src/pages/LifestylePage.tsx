@@ -293,7 +293,7 @@ const LifestylePage = (props: Props) => {
                             <div className="div2">
                                 <div className="lifestyle-page-images1">
                                     <div className="w">
-                                        <a href="https://www.instagram.com/p/BudeAMoglqR/">
+                                        <a href="https://www.instagram.com/p/BksFPdqAx6W/">
                                             <img
                                                 src="images/footer-image-3.jpeg"
                                                 alt=""
@@ -316,7 +316,7 @@ const LifestylePage = (props: Props) => {
                             <div className="div3">
                                 <div className="lifestyle-page-images">
                                     <div className="w">
-                                        <a href="https://www.instagram.com/p/BudeAMoglqR/">
+                                        <a href="https://www.instagram.com/p/BksFRJZAxG0/">
                                             <img
                                                 src="images/footer-image-2.jpeg"
                                                 alt=""
@@ -339,7 +339,7 @@ const LifestylePage = (props: Props) => {
                             <div className="div4">
                                 <div className="lifestyle-page-images1">
                                     <div className="w">
-                                        <a href="https://www.instagram.com/p/BudeAMoglqR/">
+                                        <a href="https://www.instagram.com/p/BksFNYcg3g6/">
                                             <img
                                                 src="images/footer-image-4.jpeg"
                                                 alt=""

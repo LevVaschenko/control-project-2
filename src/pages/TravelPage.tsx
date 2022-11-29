@@ -1,5 +1,6 @@
 import { Container } from '@mui/material'
 import './Scss/LifestylePage.scss'
+import './Scss/TravelPage.scss'
 import React from 'react'
 import like from 'assets/like.png'
 import image1 from 'assets/slider-picture-1.jpeg'
@@ -17,52 +18,29 @@ const LifestylePage = (props: Props) => {
                 <div className="main-content">
                     <div className="col-8">
                         <div className="name">Travel</div>
-                        <div className="lifestyle-quantity">11 posts</div>
+                        <div className="lifestyle-quantity">9 posts</div>
                         <div className="col-12 content">
                             <header className="entry-header">
                                 <span className="post-categories lifestyle-page-category">
-                                    Lifestyle
+                                    Travel
                                 </span>
                                 <div className="entry-title-pages lifestyle-page-article-title">
-                                    How Using Props in Portraits Can Make Your
-                                    Photos More Interesting
+                                    Do Cheap Photographers Take Work Away From
+                                    the Rest of Us?
                                 </div>
                                 <div className="post-media">
-                                    <iframe
-                                        title="The National - 'Light Years'"
-                                        width="800"
-                                        height="450"
-                                        src="https://www.youtube.com/embed/5FQtSn_vak0?feature=oembed"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                    ></iframe>
+                                    <img
+                                        src="images/most-recent-image-12.jpeg"
+                                        alt=""
+                                        className="travel-page-image main-page-image"
+                                    />
                                 </div>
                             </header>
                         </div>
                         <div className="col-6 content">
                             <div className="lifestyle-page-post">
                                 <img
-                                    src="images/city-life-image-4.jpeg"
-                                    alt=""
-                                    width="380"
-                                    height="570"
-                                    className="lifestyle-page-image"
-                                />
-                                <div className="post-inner123">
-                                    <header className="entry-header1">
-                                        <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
-                                        </span>
-                                        <div className="post-title-pages lifestyle-page-article-title">
-                                            9 Ways to Use Reflections More
-                                            Creatively for Stunning Photography
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                            <div className="lifestyle-page-post">
-                                <img
-                                    src="images/lifestyle-page-2.jpeg"
+                                    src="images/travel-page-1.jpeg"
                                     alt=""
                                     width="380"
                                     height="253"
@@ -71,77 +49,35 @@ const LifestylePage = (props: Props) => {
                                 <div className="post-inner123">
                                     <header className="entry-header1">
                                         <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
+                                            Travel
                                         </span>
                                         <div className="post-title-pages lifestyle-page-article-title">
-                                            How to Be a Second Shooter at
-                                            Weddings and Why It’s Important
+                                            Tips for Creating Awesome Double
+                                            Exposures In-Camera
                                         </div>
                                     </header>
                                 </div>
                             </div>
                             <div className="lifestyle-page-post">
                                 <img
-                                    src="images/lifestyle-page-3.jpeg"
+                                    src="images/travel-page-2.jpeg"
                                     alt=""
                                     width="380"
-                                    height="570"
+                                    height="500"
                                     className="lifestyle-page-image"
                                 />
                                 <div className="post-inner123">
                                     <header className="entry-header1">
                                         <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
+                                            Travel
                                         </span>
                                         <div className="post-title-pages lifestyle-page-article-title">
-                                            The 9 Most Powerful Composition
-                                            Rules for Dynamic Landscape Shots
+                                            Photography Lighting Lesson – How
+                                            Light Reflects Off Glass
                                         </div>
                                     </header>
                                 </div>
                             </div>
-                            <div className="lifestyle-page-post">
-                                <img
-                                    src="images/lifestyle-page-4.jpeg"
-                                    alt=""
-                                    width="380"
-                                    height="253"
-                                    className="lifestyle-page-image"
-                                />
-                                <div className="post-inner123">
-                                    <header className="entry-header1">
-                                        <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
-                                        </span>
-                                        <div className="post-title-pages lifestyle-page-article-title">
-                                            How to Photograph Fireworks –
-                                            Everything You Need to Know
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                            <div className="lifestyle-page-post">
-                                <img
-                                    src="images/lifestyle-page-5.jpeg"
-                                    alt=""
-                                    width="380"
-                                    height="568"
-                                    className="lifestyle-page-image"
-                                />
-                                <div className="post-inner123">
-                                    <header className="entry-header1">
-                                        <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
-                                        </span>
-                                        <div className="post-title-pages lifestyle-page-article-title">
-                                            Sunbursts and Starbursts: Shoot
-                                            Stunning Sun Flare Photography
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-6 content2">
                             <div className="lifestyle-post-4 kzjkcvzxv kkmdkvm">
                                 <div className="image kzjkcvzxv">
                                     <h3 className="lifestyle-info-4 kzjkcvzxv zxcjvn">
@@ -152,18 +88,18 @@ const LifestylePage = (props: Props) => {
                                                         href="http://localhost:3000/"
                                                         className="lifestyle-page-category"
                                                     >
-                                                        Lifestyle
+                                                        Travel
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <h4 className="entry-title-image zjcvzs lifestyle-page-article-title">
-                                            An Introduction to Amazing Abstract
-                                            Automotive Photography
+                                            Recommended Filters to Use With
+                                            Black and White Photography
                                         </h4>
                                     </h3>
                                     <img
-                                        src="images/lifestyle-image-4.jpeg"
+                                        src="images/travel-page-3.jpeg"
                                         alt=""
                                         className="lifestyle-image-4 kzjkcvzxv lifestyle-page-image"
                                     />
@@ -171,67 +107,7 @@ const LifestylePage = (props: Props) => {
                             </div>
                             <div className="lifestyle-page-post">
                                 <img
-                                    src="images/lifestyle-page-6.jpeg"
-                                    alt=""
-                                    width="380"
-                                    height="475"
-                                    className="lifestyle-page-image"
-                                />
-                                <div className="post-inner123">
-                                    <header className="entry-header1">
-                                        <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
-                                        </span>
-                                        <div className="post-title-pages lifestyle-page-article-title">
-                                            How to Shoot a Self Portrait to
-                                            Support Your Brand Identity
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                            <div className="lifestyle-page-post">
-                                <img
-                                    src="images/lifestyle-page-7.jpeg"
-                                    alt=""
-                                    width="380"
-                                    height="285"
-                                    className="lifestyle-page-image"
-                                />
-                                <div className="post-inner123">
-                                    <header className="entry-header1">
-                                        <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
-                                        </span>
-                                        <div className="post-title-pages lifestyle-page-article-title">
-                                            6 Scenarios to Try for More
-                                            Interesting Beach Photography
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                            <div className="lifestyle-page-post">
-                                <img
-                                    src="images/lifestyle-page-8.jpeg"
-                                    alt=""
-                                    width="380"
-                                    height="253"
-                                    className="lifestyle-page-image"
-                                />
-                                <div className="post-inner123">
-                                    <header className="entry-header1">
-                                        <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
-                                        </span>
-                                        <div className="post-title-pages lifestyle-page-article-title">
-                                            What Is Lens Compression and How to
-                                            Use It in Your Photos
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                            <div className="lifestyle-page-post">
-                                <img
-                                    src="images/lifestyle-page-9.jpeg"
+                                    src="images/travel-page-4.jpeg"
                                     alt=""
                                     width="380"
                                     height="570"
@@ -240,11 +116,93 @@ const LifestylePage = (props: Props) => {
                                 <div className="post-inner123">
                                     <header className="entry-header1">
                                         <span className="post-categories lifestyle-page-category">
-                                            Lifestyle
+                                            Travel
                                         </span>
                                         <div className="post-title-pages lifestyle-page-article-title">
-                                            How to Create a Panoramic Photograph
-                                            With a Tilt-Shift Lens
+                                            Can You Break the Rules of
+                                            Composition in Photography?
+                                        </div>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-6 content2">
+                            <div className="lifestyle-page-post">
+                                <img
+                                    src="images/travel-page-5.jpeg"
+                                    alt=""
+                                    width="380"
+                                    height="570"
+                                    className="lifestyle-page-image"
+                                />
+                                <div className="post-inner123">
+                                    <header className="entry-header1">
+                                        <span className="post-categories lifestyle-page-category">
+                                            Travel
+                                        </span>
+                                        <div className="post-title-pages lifestyle-page-article-title">
+                                            How to Add a Texture to Your Photos
+                                            – a Tutorial on Adding Textures
+                                        </div>
+                                    </header>
+                                </div>
+                            </div>
+                            <div className="lifestyle-page-post">
+                                <img
+                                    src="images/travel-page-6.jpeg"
+                                    alt=""
+                                    width="380"
+                                    height="253"
+                                    className="lifestyle-page-image"
+                                />
+                                <div className="post-inner123">
+                                    <header className="entry-header1">
+                                        <span className="post-categories lifestyle-page-category">
+                                            Travel
+                                        </span>
+                                        <div className="post-title-pages lifestyle-page-article-title">
+                                            12 Tips to Help You Improve Your
+                                            Nature Photography Skills
+                                        </div>
+                                    </header>
+                                </div>
+                            </div>
+                            <div className="lifestyle-page-post">
+                                <img
+                                    src="images/travel-page-7.jpeg"
+                                    alt=""
+                                    width="380"
+                                    height="570"
+                                    className="lifestyle-page-image"
+                                />
+                                <div className="post-inner123">
+                                    <header className="entry-header1">
+                                        <span className="post-categories lifestyle-page-category">
+                                            Travel
+                                        </span>
+                                        <div className="post-title-pages lifestyle-page-article-title">
+                                            Everything You Need to Know About
+                                            Macro Photography
+                                        </div>
+                                    </header>
+                                </div>
+                            </div>
+                            <div className="lifestyle-page-post">
+                                <img
+                                    src="images/travel-page-8.jpeg"
+                                    alt=""
+                                    width="380"
+                                    height="253"
+                                    className="lifestyle-page-image"
+                                />
+                                <div className="post-inner123">
+                                    <header className="entry-header1">
+                                        <span className="post-categories lifestyle-page-category">
+                                            Travel
+                                        </span>
+                                        <div className="post-title-pages lifestyle-page-article-title">
+                                            11 Travel Photography Tips When
+                                            Traveling With Young Children
                                         </div>
                                     </header>
                                 </div>
@@ -293,7 +251,7 @@ const LifestylePage = (props: Props) => {
                             <div className="div2">
                                 <div className="lifestyle-page-images1">
                                     <div className="w">
-                                        <a href="https://www.instagram.com/p/BudeAMoglqR/">
+                                        <a href="https://www.instagram.com/p/BksFPdqAx6W/">
                                             <img
                                                 src="images/footer-image-3.jpeg"
                                                 alt=""
@@ -316,7 +274,7 @@ const LifestylePage = (props: Props) => {
                             <div className="div3">
                                 <div className="lifestyle-page-images">
                                     <div className="w">
-                                        <a href="https://www.instagram.com/p/BudeAMoglqR/">
+                                        <a href="https://www.instagram.com/p/BksFRJZAxG0/">
                                             <img
                                                 src="images/footer-image-2.jpeg"
                                                 alt=""
@@ -339,7 +297,7 @@ const LifestylePage = (props: Props) => {
                             <div className="div4">
                                 <div className="lifestyle-page-images1">
                                     <div className="w">
-                                        <a href="https://www.instagram.com/p/BudeAMoglqR/">
+                                        <a href="https://www.instagram.com/p/BksFNYcg3g6/">
                                             <img
                                                 src="images/footer-image-4.jpeg"
                                                 alt=""

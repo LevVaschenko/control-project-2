@@ -75,6 +75,7 @@
 }
 
 .entry-title-pages {
+    width: 800px;
     font-size: 43.6px;
     font-family: 'Raleway';
     line-height: 50px;
@@ -95,6 +96,7 @@
 }
 
 .post-title-pages {
+    width: 380px;
     font-size: 24px;
     font-family: 'Raleway';
     color: #000000;
@@ -271,7 +273,7 @@
 
 .lifestyle-page-trending-image {
     width: 90px;
-    height: 120px;
+    height: 110px;
 }
 
 .lifestyle-page-post-date {
@@ -300,4 +302,10 @@
 .abcdefg {
     width: 300px;
     height: 360px;
+}
+
+.main-page-image:hover {
+    opacity: 0.75;
+    transition: 0.25s all ease;
+    cursor: pointer;
 }
