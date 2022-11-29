@@ -3,6 +3,8 @@ import React from 'react'
 import './Footer.scss'
 import logo from 'assets/footer-logo.png'
 import like from 'assets/like.png'
+import MenuItem from 'components/MenuItem'
+import 'components/Menu.scss'
 
 type Props = {}
 
@@ -95,10 +97,11 @@ const Footer = (props: Props) => {
                         <div className="info">
                             <img src={logo} alt=""></img>
                             <nav className="categories">
-                                <a href="http://localhost:3000/">LIFESTYLE</a>
-                                <a href="http://localhost:3000/">TRAVEL</a>
-                                <a href="http://localhost:3000/">STYLE</a>
-                                <a href="http://localhost:3000/">INTERIOR</a>
+                                <MenuItem to="/">Home</MenuItem>
+                                <MenuItem to="/lifestyle">Lifestyle</MenuItem>
+                                <MenuItem to="/travel">Travel</MenuItem>
+                                <MenuItem to="/style">Style</MenuItem>
+                                <MenuItem to="/interior">Interior</MenuItem>
                             </nav>
                         </div>
                         <div className="footer-description">

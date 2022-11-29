@@ -86,7 +86,13 @@ export default function SearchAppBar(props: Props) {
                                     flexGrow: 1,
                                 }}
                             >
-                                <img src={logo} alt="" className="logo"></img>
+                                <a href="http://localhost:3000/">
+                                    <img
+                                        src={logo}
+                                        alt=""
+                                        className="logo"
+                                    ></img>
+                                </a>
                             </Typography>
                             <Search>
                                 <SearchIconWrapper>
