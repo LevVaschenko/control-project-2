@@ -48,7 +48,7 @@ const Home = (props: Props) => {
                                                             <div className="meta-category-image">
                                                                 <ul className="post-categories-image">
                                                                     <li>
-                                                                        <a href="http://localhost:3000/">
+                                                                        <a href="http://localhost:3000/lifestyle">
                                                                             Lifestyle
                                                                         </a>
                                                                     </li>
@@ -75,7 +75,7 @@ const Home = (props: Props) => {
                                                             <div className="meta-category-image">
                                                                 <ul className="post-categories-image">
                                                                     <li>
-                                                                        <a href="http://localhost:3000/">
+                                                                        <a href="http://localhost:3000/style">
                                                                             Style
                                                                         </a>
                                                                     </li>
@@ -101,7 +101,7 @@ const Home = (props: Props) => {
                                                             <div className="meta-category-image">
                                                                 <ul className="post-categories-image">
                                                                     <li>
-                                                                        <a href="http://localhost:3000/">
+                                                                        <a href="http://localhost:3000/travel">
                                                                             Travel
                                                                         </a>
                                                                     </li>
@@ -128,7 +128,7 @@ const Home = (props: Props) => {
                                                             <div className="meta-category-image">
                                                                 <ul className="post-categories-image">
                                                                     <li>
-                                                                        <a href="http://localhost:3000/">
+                                                                        <a href="http://localhost:3000/lifestyle">
                                                                             Lifestyle
                                                                         </a>
                                                                     </li>
@@ -155,7 +155,7 @@ const Home = (props: Props) => {
                                                             <div className="meta-category-image">
                                                                 <ul className="post-categories-image">
                                                                     <li>
-                                                                        <a href="http://localhost:3000/">
+                                                                        <a href="http://localhost:3000/style">
                                                                             Style
                                                                         </a>
                                                                     </li>
@@ -208,7 +208,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/style">
                                                                                 Style
                                                                             </a>
                                                                         </li>
@@ -237,7 +237,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/travel">
                                                                                 Travel
                                                                             </a>
                                                                         </li>
@@ -266,7 +266,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/interior">
                                                                                 Interior
                                                                             </a>
                                                                         </li>
@@ -296,7 +296,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/lifestyle">
                                                                                 Lifestyle
                                                                             </a>
                                                                         </li>
@@ -325,7 +325,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/style">
                                                                                 Style
                                                                             </a>
                                                                         </li>
@@ -376,7 +376,11 @@ const Home = (props: Props) => {
                     <Container maxWidth="lg">
                         <div className="row">
                             <div className="slider-text">
-                                <div className="slider-category">Style</div>
+                                <div className="slider-category">
+                                    <a href="http://localhost:3000/style">
+                                        Style
+                                    </a>
+                                </div>
                                 <div className="slider-title">
                                     3 Tips for Becoming a Unique and Successful
                                     Photographer
@@ -392,7 +396,11 @@ const Home = (props: Props) => {
                     <Container maxWidth="lg">
                         <div className="row">
                             <div className="slider-text">
-                                <div className="slider-category">Lifestyle</div>
+                                <div className="slider-category">
+                                    <a href="http://localhost:3000/lifestyle">
+                                        Lifestyle
+                                    </a>
+                                </div>
                                 <div className="slider-title">
                                     How to Shoot a Self Portrait to Support Your
                                     Brand Identity
@@ -408,7 +416,11 @@ const Home = (props: Props) => {
                     <Container maxWidth="lg">
                         <div className="row">
                             <div className="slider-text">
-                                <div className="slider-category">Interior</div>
+                                <div className="slider-category">
+                                    <a href="http://localhost:3000/interior">
+                                        Interior
+                                    </a>
+                                </div>
                                 <div className="slider-title">
                                     How to Use Vibrant Colors in Photography
                                     With Great Success
@@ -446,7 +458,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/lifestyle">
                                                                                 Lifestyle
                                                                             </a>
                                                                         </li>
@@ -476,7 +488,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/lifestyle">
                                                                                 Lifestyle
                                                                             </a>
                                                                         </li>
@@ -506,7 +518,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/interior">
                                                                                 Interior
                                                                             </a>
                                                                         </li>
@@ -544,7 +556,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/style">
                                                                                 Style
                                                                             </a>
                                                                         </li>
@@ -573,7 +585,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/interior">
                                                                                 Interior
                                                                             </a>
                                                                         </li>
@@ -630,7 +642,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/travel">
                                                                                 Travel
                                                                             </a>
                                                                         </li>
@@ -688,7 +700,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/style">
                                                                                 Style
                                                                             </a>
                                                                         </li>
@@ -746,7 +758,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/style">
                                                                                 Style
                                                                             </a>
                                                                         </li>
@@ -805,7 +817,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/lifestyle">
                                                                                 Lifestyle
                                                                             </a>
                                                                         </li>
@@ -863,7 +875,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/travel">
                                                                                 Travel
                                                                             </a>
                                                                         </li>
@@ -921,7 +933,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/style">
                                                                                 Style
                                                                             </a>
                                                                         </li>
@@ -979,7 +991,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/travel">
                                                                                 Travel
                                                                             </a>
                                                                         </li>
@@ -1037,7 +1049,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/style">
                                                                                 Style
                                                                             </a>
                                                                         </li>
@@ -1094,7 +1106,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/lifestyle">
                                                                                 Lifestyle
                                                                             </a>
                                                                         </li>
@@ -1152,7 +1164,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/travel">
                                                                                 Travel
                                                                             </a>
                                                                         </li>
@@ -1209,7 +1221,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/lifestyle">
                                                                                 Lifestyle
                                                                             </a>
                                                                         </li>
@@ -1267,7 +1279,7 @@ const Home = (props: Props) => {
                                                                 <div className="meta-category-image">
                                                                     <ul className="post-categories-image">
                                                                         <li>
-                                                                            <a href="http://localhost:3000/">
+                                                                            <a href="http://localhost:3000/travel">
                                                                                 Travel
                                                                             </a>
                                                                         </li>
@@ -1359,7 +1371,7 @@ const Home = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href="http://localhost:3000/">
+                                                                    <a href="http://localhost:3000/lifestyle">
                                                                         Lifestyle
                                                                     </a>
                                                                 </li>
@@ -1436,7 +1448,7 @@ const Home = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href="http://localhost:3000/">
+                                                                    <a href="http://localhost:3000/interior">
                                                                         Interior
                                                                     </a>
                                                                 </li>
@@ -1512,7 +1524,7 @@ const Home = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href="http://localhost:3000/">
+                                                                    <a href="http://localhost:3000/travel">
                                                                         Travel
                                                                     </a>
                                                                 </li>
@@ -1589,7 +1601,7 @@ const Home = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href="http://localhost:3000/">
+                                                                    <a href="http://localhost:3000/lifestyle">
                                                                         Lifestyle
                                                                     </a>
                                                                 </li>
@@ -1666,7 +1678,7 @@ const Home = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href="http://localhost:3000/">
+                                                                    <a href="http://localhost:3000/style">
                                                                         Style
                                                                     </a>
                                                                 </li>
@@ -1742,7 +1754,7 @@ const Home = (props: Props) => {
                                                         <div className="meta-category-image blog-meta">
                                                             <ul className="post-categories-image blog-post">
                                                                 <li>
-                                                                    <a href="http://localhost:3000/">
+                                                                    <a href="http://localhost:3000/travel">
                                                                         Travel
                                                                     </a>
                                                                 </li>

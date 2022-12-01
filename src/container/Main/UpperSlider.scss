@@ -40,7 +40,20 @@
     font-size: 16px;
     line-height: 24px;
     font-family: 'Cormorant Garamond', sans-serif;
+    color: white;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+.slider-category a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Cormorant Garamond', sans-serif;
     cursor: pointer;
+    color: white;
+    text-decoration: none !important;
+    list-style: none;
 }
 
 .slider-title {
