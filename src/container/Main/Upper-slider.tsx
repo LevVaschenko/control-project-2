@@ -37,7 +37,11 @@ export default () => {
                     <Container maxWidth="lg">
                         <div className="row">
                             <div className="slider-text">
-                                <div className="slider-category">Lifestyle</div>
+                                <div className="slider-category">
+                                    <a href="http://localhost:3000/lifestyle">
+                                        Lifestyle
+                                    </a>
+                                </div>
                                 <div className="slider-title">
                                     How Using Props in Portraits Can Make Your
                                     Photos More Interesting
@@ -53,7 +57,11 @@ export default () => {
                     <Container maxWidth="lg">
                         <div className="row">
                             <div className="slider-text">
-                                <div className="slider-category">Interior</div>
+                                <div className="slider-category">
+                                    <a href="http://localhost:3000/interior">
+                                        Interior
+                                    </a>
+                                </div>
                                 <div className="slider-title">
                                     How to Protect Your Camera Against Lens
                                     Fungal Damage
@@ -69,7 +77,11 @@ export default () => {
                     <Container maxWidth="lg">
                         <div className="row">
                             <div className="slider-text">
-                                <div className="slider-category">Travel</div>
+                                <div className="slider-category">
+                                    <a href="http://localhost:3000/travel">
+                                        Travel
+                                    </a>
+                                </div>
                                 <div className="slider-title">
                                     Do Cheap Photographers Take Work Away From
                                     the Rest of Us?
