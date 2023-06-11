@@ -9,11 +9,11 @@ const Menu = (props: Props) => {
         <>
             <div className="navigation-bar-col">
                 <ul className="navigation">
-                    <MenuItem to="/">Home</MenuItem>
-                    <MenuItem to="/lifestyle">Lifestyle</MenuItem>
-                    <MenuItem to="/travel">Travel</MenuItem>
-                    <MenuItem to="/style">Style</MenuItem>
-                    <MenuItem to="/interior">Interior</MenuItem>
+                    <MenuItem to="/" className="menuItem-button">Home</MenuItem>
+                    <MenuItem to="/lifestyle" className="menuItem-button">Lifestyle</MenuItem>
+                    <MenuItem to="/travel" className="menuItem-button">Travel</MenuItem>
+                    <MenuItem to="/style" className="menuItem-button">Style</MenuItem>
+                    <MenuItem to="/interior" className="menuItem-button">Interior</MenuItem>
                 </ul>
             </div>
         </>

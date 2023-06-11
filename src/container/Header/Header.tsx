@@ -13,6 +13,7 @@ import logo from 'assets/logo.png'
 import './Logo.scss'
 import './Buttons.scss'
 import './Container.scss'
+import './Header.scss'
 import UpperSlider from '../Main/Upper-slider'
 import Menu from 'components/Menu'
 import { MenuItem } from '@mui/material'
@@ -65,7 +66,7 @@ export default function SearchAppBar(props: Props) {
     return (
         <>
             <Container className="container">
-                <Box sx={{ flexGrow: 1 }}>
+                <Box sx={{ flexGrow: 1 }} className='box'>
                     <AppBar position="static" className="app-bar">
                         <Toolbar>
                             <IconButton

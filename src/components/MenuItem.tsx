@@ -5,11 +5,12 @@ import { NavLink } from 'react-router-dom'
 type Props = {
     to: string
     children: React.ReactNode
+    className?: string
 }
 
-const MenuItem = ({ to, children }: Props) => {
+const MenuItem = ({ to, children, className }: Props) => {
     return (
-        <Button color="inherit">
+        <Button className={className} color="inherit">
             <NavLink
                 to={to}
                 className={({ isActive }) =>
