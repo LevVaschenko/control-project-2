@@ -1,6 +1,12 @@
 .logo-container {
     display: flex;
     justify-content: center;
+    flex-grow: 0.9;
+}
+
+.logo {
+    width: 280px;
+    height: 55px;
 }
 
 .logo:hover {
