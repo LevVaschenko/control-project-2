@@ -1,13 +1,49 @@
-.image {
+.city-life-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 35px;
     position: relative;
-    width: 100%;
+    padding-left: 16px;
+    padding-top: 16px;
+    margin-right: 16px;
+    justify-items: stretch;
+    width: 1112px;
+}
+    
+.city-life-post-6, .city-life-image-6, .city-life-info-6 {
+    grid-area: 1 / 1 / 2 / 3;
+    width: 712.5px;
+    height: 600px;
+}
+    
+.city-life-post-7, .city-life-image-7, .city-life-info-7 {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 338.3px;
+    height: 600px;
+}
+    
+.city-life-post-8, .city-life-image-8, .city-life-info-8 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 338.3px;
+    height: 380px;
+}
+    
+.city-life-post-9, .city-life-image-9, .city-life-info-9 {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 338.3px;
+    height: 380px;
+}
+    
+.city-life-post-10, .city-life-image-10, .city-life-info-10 {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 338.3px;
+    height: 380px;
 }
 
 h2, h3 {
     position: absolute;
     top: 200px;
-    width: 520px;
-    height: 320px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -32,12 +68,24 @@ h2:hover {
     text-decoration: none;
 }
 
-.entry-title-image {
+.city-life-title-6, .city-life-title-7, .city-life-title-8, .city-life-title-9, .city-life-title-10 {
     margin-top: 0.5rem;
-    font-size: 40px;
     color: white;
     font-family: 'Raleway';
     line-height: 45px;
+}
+
+.city-life-title-6 {
+    font-size: 40px;
+}
+
+.city-life-title-7, .city-life-title-8, .city-life-title-9, .city-life-title-10 {
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.city-life-info-6, .city-life-info-7, .city-life-info-8, .city-life-info-9, .city-life-info-10 {
+    top: 0px;
 }
 
 h3 {

@@ -9,18 +9,23 @@ import '../container/Main/Bottom-slider.scss'
 import '../container/Main/Street-views.scss'
 import '../container/Main/Most-recent.scss'
 import '../container/Main/Blog.scss'
+import 'pages/Scss/Font.scss'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
+import { Link } from 'react-router-dom';
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import UpperSlider from 'container/Main/Upper-slider'
+import { posts } from 'container/Array/Posts';
 
 type Props = {}
 
-const Home = (props: Props) => {
+const Home = () => {
+    const lifestylePosts = posts.filter((post) => post.block === 'lifestyle');
+    const cityLifePosts = posts.filter((post) => post.block === 'cityLife');
+
     return (
         <>
             <UpperSlider />
@@ -37,145 +42,42 @@ const Home = (props: Props) => {
                                 <div className="city-life-posts">
                                     <div className="city-life-block-tiles">
                                         <div className="tiles-outer">
-                                            <Grid
-                                                container
-                                                spacing={2}
-                                                className="tiles-outer"
-                                            >
-                                                <Grid item xs={6} md={6}>
-                                                    <div className="image">
-                                                        <h2>
-                                                            <div className="meta-category-image">
-                                                                <ul className="post-categories-image">
-                                                                    <li>
-                                                                        <a href="http://localhost:3000/lifestyle">
-                                                                            Lifestyle
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
+                                            <Grid container spacing={2} className="tiles-outer">
+                                                <div className="city-life-block">
+                                                    {cityLifePosts.map((post) => (
+                                                        <div
+                                                            className={`city-life-post-${post.id}`}
+                                                            key={post.id}
+                                                        >
+                                                            <div className="image">
+                                                                <Link to={`/posts/${post.id}`}>
+                                                                    <h2 className={`city-life-info-${post.id}`}>
+                                                                        <div className="meta-category-image">
+                                                                            <ul className="post-categories-image">
+                                                                                <li>
+                                                                                    <a
+                                                                                        href={`http://localhost:3000/${post.category}`}
+                                                                                        className={`category-${post.size} category-${post.category.toLowerCase()}`}
+                                                                                    >
+                                                                                        {post.category}
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <h1 className={`city-life-title-${post.id}`}>
+                                                                            {post.title}
+                                                                        </h1>
+                                                                    </h2>
+                                                                    <img
+                                                                        src={post.image}
+                                                                        alt=""
+                                                                        className={`city-life-image-${post.id}`}
+                                                                    />
+                                                                </Link>
                                                             </div>
-                                                            <h1 className="entry-title-image">
-                                                                How to Be a
-                                                                Second Shooter
-                                                                at Weddings and
-                                                                Why It’s
-                                                                Important
-                                                            </h1>
-                                                        </h2>
-                                                        <img
-                                                            src="images/city-life-image-1.jpeg"
-                                                            alt=""
-                                                            className="image1"
-                                                        ></img>
-                                                    </div>
-                                                </Grid>
-                                                <Grid item xs={6} md={6}>
-                                                    <div className="image">
-                                                        <h2>
-                                                            <div className="meta-category-image">
-                                                                <ul className="post-categories-image">
-                                                                    <li>
-                                                                        <a href="http://localhost:3000/style">
-                                                                            Style
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <h1 className="entry-title-image">
-                                                                How to
-                                                                Photograph Food
-                                                                Coloring or Dye
-                                                                Dropped in Water
-                                                            </h1>
-                                                        </h2>
-                                                        <img
-                                                            src="images/city-life-image-2.jpeg"
-                                                            alt=""
-                                                            className="image2"
-                                                        ></img>
-                                                    </div>
-                                                </Grid>
-                                                <Grid item xs={6} md={4}>
-                                                    <div className="image">
-                                                        <h3>
-                                                            <div className="meta-category-image">
-                                                                <ul className="post-categories-image">
-                                                                    <li>
-                                                                        <a href="http://localhost:3000/travel">
-                                                                            Travel
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <h4 className="entry-title-image">
-                                                                How to Add a
-                                                                Texture to Your
-                                                                Photos – a
-                                                                Tutorial on
-                                                                Adding Textures
-                                                            </h4>
-                                                        </h3>
-                                                        <img
-                                                            src="images/city-life-image-3.jpeg"
-                                                            alt=""
-                                                            className="image3"
-                                                        ></img>
-                                                    </div>
-                                                </Grid>
-                                                <Grid item xs={6} md={4}>
-                                                    <div className="image">
-                                                        <h3>
-                                                            <div className="meta-category-image">
-                                                                <ul className="post-categories-image">
-                                                                    <li>
-                                                                        <a href="http://localhost:3000/lifestyle">
-                                                                            Lifestyle
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <h4 className="entry-title-image">
-                                                                9 Ways to Use
-                                                                Reflections More
-                                                                Creatively for
-                                                                Stunning
-                                                                Photography
-                                                            </h4>
-                                                        </h3>
-                                                        <img
-                                                            src="images/city-life-image-4.jpeg"
-                                                            alt=""
-                                                            className="image4"
-                                                        ></img>
-                                                    </div>
-                                                </Grid>
-                                                <Grid item xs={6} md={4}>
-                                                    <div className="image">
-                                                        <h3>
-                                                            <div className="meta-category-image">
-                                                                <ul className="post-categories-image">
-                                                                    <li>
-                                                                        <a href="http://localhost:3000/style">
-                                                                            Style
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <h4 className="entry-title-image">
-                                                                Your Ultimate
-                                                                Guide to Hanging
-                                                                Wall Art and
-                                                                Photos Like a
-                                                                Pro
-                                                            </h4>
-                                                        </h3>
-                                                        <img
-                                                            src="images/city-life-image-5.jpeg"
-                                                            alt=""
-                                                            className="image5"
-                                                        ></img>
-                                                    </div>
-                                                </Grid>
+                                                        </div>
+                                                    ))}
+                                                </div>
                                             </Grid>
                                         </div>
                                     </div>
@@ -202,152 +104,29 @@ const Home = (props: Props) => {
                                                 className="tiles-outer"
                                             >
                                                 <div className="parent">
-                                                    <div className="lifestyle-post-1">
-                                                        <div className="image">
-                                                            <h2 className="lifestyle-info-1">
-                                                                <div className="meta-category-image">
-                                                                    <ul className="post-categories-image">
-                                                                        <li>
-                                                                            <a href="http://localhost:3000/style">
-                                                                                Style
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <h1 className="entry-title-image">
-                                                                    Equipment
-                                                                    Versus
-                                                                    Photographer
-                                                                    – Which
-                                                                    Matters
-                                                                    More?
-                                                                </h1>
-                                                            </h2>
-                                                            <img
-                                                                src="
-                                                        images/lifestyle-image-1.jpeg"
-                                                                alt=""
-                                                                className="lifestyle-image-1"
-                                                            />
+                                                    {lifestylePosts.map((post) => (
+                                                        <div className={`lifestyle-post-${post.id}`} key={post.id}>
+                                                            <div className="image">
+                                                                <Link to={`/posts/${post.id}`}>
+                                                                    <h2 className={`lifestyle-info-${post.id}`}>
+                                                                        <div className="meta-category-image">
+                                                                            <ul className="post-categories-image">
+                                                                                <li>
+                                                                                    <a href={`http://localhost:3000/${post.category}`} className={`category-${post.size} category-${post.category.toLowerCase()}`}>
+                                                                                        {post.category}
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <h1 className={`entry-title-image post-title-${post.size}`}>
+                                                                            {post.title}
+                                                                        </h1>
+                                                                    </h2>
+                                                                    <img src={post.image} alt="" className={`lifestyle-image-${post.id}`} />
+                                                                </Link>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div className="lifestyle-post-2">
-                                                        <div className="image">
-                                                            <h3 className="lifestyle-info-2">
-                                                                <div className="meta-category-image">
-                                                                    <ul className="post-categories-image">
-                                                                        <li>
-                                                                            <a href="http://localhost:3000/travel">
-                                                                                Travel
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <h4 className="entry-title-image">
-                                                                    Tips for
-                                                                    Creating
-                                                                    Awesome
-                                                                    Double
-                                                                    Exposures
-                                                                    In-Camera
-                                                                </h4>
-                                                            </h3>
-                                                            <img
-                                                                src="
-                                                        images/lifestyle-image-2.jpeg"
-                                                                alt=""
-                                                                className="lifestyle-image-2"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div className="lifestyle-post-3">
-                                                        <div className="image">
-                                                            <h3 className="lifestyle-info-3">
-                                                                <div className="meta-category-image">
-                                                                    <ul className="post-categories-image">
-                                                                        <li>
-                                                                            <a href="http://localhost:3000/interior">
-                                                                                Interior
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <h4 className="entry-title-image">
-                                                                    5 Top Tips
-                                                                    for
-                                                                    Marketing
-                                                                    Your
-                                                                    Photography
-                                                                    Business
-                                                                    Successfully
-                                                                </h4>
-                                                            </h3>
-                                                            <img
-                                                                src="
-                                                        images/lifestyle-image-3.jpeg"
-                                                                alt=""
-                                                                className="lifestyle-image-3"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div className="lifestyle-post-4">
-                                                        <div className="image">
-                                                            <h3 className="lifestyle-info-4">
-                                                                <div className="meta-category-image">
-                                                                    <ul className="post-categories-image">
-                                                                        <li>
-                                                                            <a href="http://localhost:3000/lifestyle">
-                                                                                Lifestyle
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <h4 className="entry-title-image">
-                                                                    An
-                                                                    Introduction
-                                                                    to Amazing
-                                                                    Abstract
-                                                                    Automotive
-                                                                    Photography
-                                                                </h4>
-                                                            </h3>
-                                                            <img
-                                                                src="
-                                                        images/lifestyle-image-4.jpeg"
-                                                                alt=""
-                                                                className="lifestyle-image-4"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div className="lifestyle-post-5">
-                                                        <div className="image">
-                                                            <h3 className="lifestyle-info-5">
-                                                                <div className="meta-category-image">
-                                                                    <ul className="post-categories-image">
-                                                                        <li>
-                                                                            <a href="http://localhost:3000/style">
-                                                                                Style
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <h4 className="entry-title-image">
-                                                                    5 Essential
-                                                                    Tools for
-                                                                    Wedding
-                                                                    Photography
-                                                                    That Aren’t
-                                                                    Gear-Related
-                                                                </h4>
-                                                            </h3>
-                                                            <img
-                                                                src="
-                                                        images/lifestyle-image-5.jpeg"
-                                                                alt=""
-                                                                className="lifestyle-image-5"
-                                                            />
-                                                        </div>
-                                                    </div>
+                                                    ))}
                                                 </div>
                                             </Grid>
                                         </div>
