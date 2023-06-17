@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 @mixin Bottom-SliderSettings() {
-    width: 100%;
-    height: 1000px;
+    width: 100% !important;
+    height: 95vh !important;
     color: white;    
     background-repeat: no-repeat; 
     background-position: center; 
@@ -17,7 +17,6 @@
 
 .slider-2 {
     @include Bottom-SliderSettings();
-    // height: 828px !important;
     background-image: url(/assets/bottom-slider-2.jpeg);
 }
 
@@ -28,7 +27,6 @@
 
 .bottom-slider {
     width: 100%;
-    // height: 940px;
     color: white;
     background-repeat: no-repeat; 
     background-position: center; 
@@ -36,7 +34,7 @@
 }
 
 .slider-text {
-    padding-top: 660px;
+    padding-top: 470px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 48px;

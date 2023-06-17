@@ -3,7 +3,7 @@
 
 @mixin SliderSettings() {
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     color: white;    
     background-repeat: no-repeat; 
     background-position: center; 
@@ -17,7 +17,6 @@
 
 .slider2 {
     @include SliderSettings();
-    // height: 828px !important;
     background-image: url(/assets/slider-picture-2.jpeg);
 }
 
@@ -26,8 +25,8 @@
     background-image: url(/assets/slider-picture-3.jpeg);
 }
 
-.slider-text {
-    padding-bottom: 50px;
+.upper-slider-text {
+    padding-top: 525px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 48px;

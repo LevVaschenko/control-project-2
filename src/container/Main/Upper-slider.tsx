@@ -36,7 +36,7 @@ export default () => {
                 <SwiperSlide className="slider1">
                     <Container maxWidth="lg">
                         <div className="row">
-                            <div className="slider-text">
+                            <div className="upper-slider-text">
                                 <div className="slider-category">
                                     <a href="http://localhost:3000/lifestyle">
                                         Lifestyle
@@ -56,7 +56,7 @@ export default () => {
                 <SwiperSlide className="slider2">
                     <Container maxWidth="lg">
                         <div className="row">
-                            <div className="slider-text">
+                            <div className="upper-slider-text">
                                 <div className="slider-category">
                                     <a href="http://localhost:3000/interior">
                                         Interior
@@ -76,7 +76,7 @@ export default () => {
                 <SwiperSlide className="slider3">
                     <Container maxWidth="lg">
                         <div className="row">
-                            <div className="slider-text">
+                            <div className="upper-slider-text">
                                 <div className="slider-category">
                                     <a href="http://localhost:3000/travel">
                                         Travel
