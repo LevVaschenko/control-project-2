@@ -12,54 +12,58 @@
     width: 1112px;
 }
 
-.street-views-post-1, .street-views-image-1 {
+.street-views-post-11, .street-views-image-11 {
     width: 247.5px;
+    height: 251.5px;
     grid-area: 1 / 1 / 2 / 2;
 }
-.street-views-post-2, .street-views-image-2 {
+.street-views-post-12, .street-views-image-12 {
     width: 247.5px;
+    height: 251.5px;
     grid-area: 2 / 1 / 3 / 2;
 }
-.street-views-post-3, .street-views-image-3 {
+.street-views-post-13, .street-views-image-13 {
     width: 520px;
     height: 530px;
     grid-area: 1 / 2 / 3 / 3;
     margin-right: 9px;
 }
-.street-views-post-4, .street-views-image-4 {
+.street-views-post-14, .street-views-image-14 {
     width: 247px;
+    height: 251.5px;
     grid-area: 1 / 3 / 2 / 4;
 }
-.street-views-post-5, .street-views-image-5 {
+.street-views-post-15, .street-views-image-15 {
     width: 247px;
+    height: 251.5px;
     grid-area: 2 / 3 / 3 / 4;
 }
 
-.street-views-info-1, .street-views-info-2, .street-views-info-3, .street-views-info-4, .street-views-info-5 {
+.street-views-info-11, .street-views-info-12, .street-views-info-13, .street-views-info-14, .street-views-info-15 {
     top: 0px;
 }
 
-.street-views-info-1, .street-views-info-2{
+.street-views-info-11, .street-views-info-12{
     width: 247.5px;
     height: 250px;
 }
 
-.street-views-info-4, .street-views-info-5 {
+.street-views-info-14, .street-views-info-15 {
     width: 247px;
 }
 
-.street-views-info-3 {
+.street-views-info-13 {
     width: 520px;
     height: 530px;
 }
 
-.street-views-image-1:hover, .street-views-image-2:hover, .street-views-image-3:hover, .street-views-image-4:hover, .street-views-image-5:hover {
+.street-views-image-11:hover, .street-views-image-12:hover, .street-views-image-13:hover, .street-views-image-14:hover, .street-views-image-15:hover {
     opacity: 0.9;
     cursor: pointer;
     transition: 0.25s ease;
 }
 
-.street-views-title-1, .street-views-title-2, .street-views-title-3, .street-views-title-4, .street-views-title-5 {
+.street-views-title-11, .street-views-title-12, .street-views-title-13, .street-views-title-14, .street-views-title-15 {
     margin-top: 0.5rem;
     font-size: 24px;
     color: white;
@@ -67,10 +71,10 @@
     line-height: 1.125;
 }
 
-.street-views-info-4, .street-views-info-5 {
+.street-views-info-14, .street-views-info-15 {
     height: 247px;
 }
 
-.street-views-title-3 {
+.street-views-title-13 {
     font-size: 32px;
 }
