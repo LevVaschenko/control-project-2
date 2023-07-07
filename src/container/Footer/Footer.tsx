@@ -71,7 +71,7 @@ const Footer = (props: Props) => {
                 <Container maxWidth="lg">
                     <div className="footer-section">
                         <div className="info">
-                            <img src={logo} alt=""></img>
+                            <img src={logo} alt="" className='footer-logo'></img>
                             <nav className="categories">
                                 <MenuItem to="/">Home</MenuItem>
                                 <MenuItem to="/lifestyle">Lifestyle</MenuItem>

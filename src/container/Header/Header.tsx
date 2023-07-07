@@ -1,22 +1,24 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
-import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
-import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
 import logo from 'assets/logo.png'
+import footerLogo from 'assets/footer-logo.png'
 import './Logo.scss'
 import './Buttons.scss'
 import './Container.scss'
 import './Header.scss'
-import UpperSlider from '../Main/Upper-slider'
 import Menu from 'components/Menu'
 
 type Props = {}
 
 export default function SearchAppBar(props: Props) {
+    const location = useLocation()
+    const isHomePage = location.pathname === '/'
+
     return (
         <>
             <Container className="container">
@@ -33,11 +35,7 @@ export default function SearchAppBar(props: Props) {
                                 }}
                             >
                                 <a href="http://localhost:3000/">
-                                    <img
-                                        src={logo}
-                                        alt=""
-                                        className="logo"
-                                    ></img>
+                                    <img src={isHomePage ? logo : footerLogo} alt="" className="logo" />
                                 </a>
                             </Typography>
                         </Toolbar>
