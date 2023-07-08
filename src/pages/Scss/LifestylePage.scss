@@ -115,8 +115,11 @@
 }
 
 .zjcvzs {
-    font-size: 32px !important;
+    color: white;
+    font-family: "Raleway";
+    font-size: 30px !important;
     line-height: 35px !important;
+    margin-top: 10px;
 }
 
 .kkmdkvm {
@@ -308,4 +311,9 @@
     opacity: 0.75;
     transition: 0.25s all ease;
     cursor: pointer;
+}
+
+.cool-4-upper-text {
+    font-size: 24px !important;
+    line-height: 28px !important;
 }

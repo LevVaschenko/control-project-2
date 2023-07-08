@@ -226,7 +226,7 @@ const LifestylePage = (props: Props) => {
                         <div className="lifestyle-post-4 abcdefg">
                             <div className="image abcdefg">
                                 <h3 className="lifestyle-info-4 abcdefg">
-                                    <h4 className="entry-title-image">
+                                    <h4 className="entry-title-image cool-4-upper-text zjcvzs">
                                         How to Shoot Product Photography With
                                         Single Strobe Lighting
                                     </h4>
