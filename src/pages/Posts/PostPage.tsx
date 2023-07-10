@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import 'container/Array/Posts'
 import { posts } from 'container/Array/Posts';
+import { Box, Container } from '@mui/material';
 
 const PostPage = () => {
     const { postId } = useParams<{ postId?: string }>()
@@ -17,10 +18,14 @@ const PostPage = () => {
     }
 
     return (
-        <div>
-            <h1>{post.title}</h1>
-            <img src={post.image} alt={post.title} />
-        </div>
+        <>
+            <Container>
+                <Box sx={{ flexGrow: 1 }}>
+                    <h1>{post.title}</h1>
+                    <img src={post.image} alt={post.title} />
+                </Box>
+            </Container>
+        </>
     )
 }
 
