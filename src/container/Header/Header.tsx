@@ -18,11 +18,15 @@ type Props = {}
 export default function SearchAppBar(props: Props) {
     const location = useLocation()
     const isHomePage = location.pathname === '/'
-
+    const isPostsPage = location.pathname.startsWith('/posts')
+    const isCategoryPage = location.pathname.startsWith('/lifestyle') ||
+                           location.pathname.startsWith('/travel') ||
+                           location.pathname.startsWith('/style') ||
+                           location.pathname.startsWith('/interior')
     return (
         <>
             <Container className="container">
-                <Box sx={{ flexGrow: 1 }} className="box">
+                <Box sx={{ flexGrow: 1 }} className={`box${isPostsPage ? ' unbox' : ''}${isCategoryPage ? ' category-box' : ''}`}>
                     <AppBar position="static" className="app-bar">
                         <Toolbar>
                             <Typography

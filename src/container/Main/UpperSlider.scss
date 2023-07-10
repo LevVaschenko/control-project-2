@@ -55,12 +55,14 @@
     list-style: none;
 }
 
-.slider-title {
+.slider-title a, .slider-link {
     font-size: 56px;
     font-family: 'Raleway';
     font-weight: 400;
     margin-top: 15px;
     width: 760px;
+    color: white;
+    text-decoration: none !important;
 }
 
 .slider-button {

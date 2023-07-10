@@ -297,4 +297,28 @@ export const posts = [
         description: 'Structured gripped tape invisible moulded cups for suppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button...',
         block: 'blog',
     },
+    {
+        id: 34,
+        title: '3 Tips for Becoming a Unique and Successful Photographer',
+        category: 'Style',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        size: 'medium',
+        description: 'Structured gripped tape invisible moulded cups for suppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button...',
+    },
+    {
+        id: 35,
+        title: 'How to Shoot a Self Portrait to Support Your Brand Identity',
+        category: 'Lifestyle',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        size: 'medium',
+        description: 'Structured gripped tape invisible moulded cups for suppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button...',
+    },
+    {
+        id: 36,
+        title: 'How to Use Vibrant Colors in Photography With Great Success',
+        category: 'Interior',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        size: 'medium',
+        description: 'Structured gripped tape invisible moulded cups for suppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button...',
+    },
 ]

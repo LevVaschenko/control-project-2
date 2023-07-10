@@ -153,66 +153,93 @@ const Home = () => {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-                <SwiperSlide className="slider-1">
-                    <Container maxWidth="lg">
-                        <div className="row">
-                            <div className="slider-text">
-                                <div className="slider-category">
-                                    <a href="http://localhost:3000/style">
-                                        Style
-                                    </a>
-                                </div>
-                                <div className="slider-title">
-                                    3 Tips for Becoming a Unique and Successful
-                                    Photographer
-                                </div>
-                                <div className="slider-button">
-                                    <a className="button">View Post</a>
-                                </div>
-                            </div>
-                        </div>
-                    </Container>
-                </SwiperSlide>
-                <SwiperSlide className="slider-2">
-                    <Container maxWidth="lg">
-                        <div className="row">
-                            <div className="slider-text">
-                                <div className="slider-category">
-                                    <a href="http://localhost:3000/lifestyle">
-                                        Lifestyle
-                                    </a>
-                                </div>
-                                <div className="slider-title">
-                                    How to Shoot a Self Portrait to Support Your
-                                    Brand Identity
-                                </div>
-                                <div className="slider-button">
-                                    <a className="button">View Post</a>
-                                </div>
-                            </div>
-                        </div>
-                    </Container>
-                </SwiperSlide>
-                <SwiperSlide className="slider-3">
-                    <Container maxWidth="lg">
-                        <div className="row">
-                            <div className="slider-text">
-                                <div className="slider-category">
-                                    <a href="http://localhost:3000/interior">
-                                        Interior
-                                    </a>
-                                </div>
-                                <div className="slider-title">
-                                    How to Use Vibrant Colors in Photography
-                                    With Great Success
-                                </div>
-                                <div className="slider-button">
-                                    <a className="button">View Post</a>
-                                </div>
-                            </div>
-                        </div>
-                    </Container>
-                </SwiperSlide>
+                {posts
+                    .filter((post) => post.id === 34)
+                    .map((post) => (
+                        <SwiperSlide key={post.id} className="slider-1">
+                            <Link to={`/posts/${post.id}`} className='slider-link'>
+                                <Container maxWidth="lg">
+                                    <div className="row">
+                                        <div className="slider-text">
+                                            <div className="slider-category">
+                                                <Link to={`/${post.category.toLowerCase()}`}>
+                                                    {post.category}
+                                                </Link>
+                                            </div>
+                                            <div className="slider-title">
+                                                <Link to={`/posts/${post.id}`}>
+                                                    {post.title}
+                                                </Link>
+                                            </div>
+                                            <div className="slider-button">
+                                                <Link to={`/posts/${post.id}`} className="button">
+                                                    View Post
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Container>
+                            </Link>
+                        </SwiperSlide>
+                    ))}
+                {posts
+                    .filter((post) => post.id === 35)
+                    .map((post) => (
+                        <SwiperSlide key={post.id} className="slider-2">
+                            <Link to={`/posts/${post.id}`} className='slider-link'>
+                                <Container maxWidth="lg">
+                                    <div className="row">
+                                        <div className="slider-text">
+                                            <div className="slider-category">
+                                                <Link to={`/${post.category.toLowerCase()}`}>
+                                                    {post.category}
+                                                </Link>
+                                            </div>
+                                            <div className="slider-title">
+                                                <Link to={`/posts/${post.id}`}>
+                                                    {post.title}
+                                                </Link>
+                                            </div>
+                                            <div className="slider-button">
+                                                <Link to={`/posts/${post.id}`} className="button">
+                                                    View Post
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Container>
+                            </Link>
+                        </SwiperSlide>
+                    ))}
+                {posts
+                    .filter((post) => post.id === 36)
+                    .map((post) => (
+                        <SwiperSlide key={post.id} className="slider-3">
+                            <Link to={`/posts/${post.id}`} className='slider-link'>
+                                <Container maxWidth="lg">
+                                    <div className="row">
+                                        <div className="slider-text">
+                                            <div className="slider-category">
+                                                <Link to={`/${post.category.toLowerCase()}`}>
+                                                    {post.category}
+                                                </Link>
+                                            </div>
+                                            <div className="slider-title">
+                                                <Link to={`/posts/${post.id}`}>
+                                                    {post.title}
+                                                </Link>
+                                            </div>
+                                            <div className="slider-button">
+                                                <Link to={`/posts/${post.id}`} className="button">
+                                                    View Post
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Container>
+                            </Link>
+                        </SwiperSlide>
+                    ))}
             </Swiper>
             <Container>
                 <Box sx={{ flexGrow: 1 }} className="street-views-box">
