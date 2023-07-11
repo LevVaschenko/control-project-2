@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+
+.page-image {
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/slider-picture-1.jpeg);
+    color: white;    
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+}
+
+.page-header {
+    overflow: hidden;
+    position: relative;
+    transform: translate3d(0,0,0);
+}
+
+.post-title, .post-title a {
+    font-size: 46px;
+    font-family: "Raleway";
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 22.5px;
+    width: 760px;
+    color: white;
+    text-decoration: none !important;
+    line-height: 52px;
+}
+
+.page-meta {
+    display: flex;
+    font-family: Cormora;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.025em;
+    color: white;
+}
+
+.page-date {
+    color: rgba(255, 255, 255, .85);
+}
+
+.page-author {
+    margin-left: 0.65rem;
+    color: rgba(255, 255, 255, .85);
+}
+
+.page-author::before {
+    margin-right: 0.5rem;
+    content: "\b7";
+}
+
+.page-info {
+    padding-top: 140px;
+}
