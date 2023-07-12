@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .page-image {
     width: 100%;
@@ -54,4 +55,111 @@
 
 .page-info {
     padding-top: 140px;
+}
+
+.col-2 {
+    width: 16.66667%;
+}
+
+.col-10 {
+    width: 91.6667%;
+}
+
+.post-links, .shares-amount, .total-shares-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-content {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+}
+
+.total-shares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shares-amount, .media-shares-amount {
+    color: #a8a8a8;
+    font-family: Cormorant Garamond;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.025em;
+    text-transform: none;
+}
+
+.total-shares-title {
+    color: #000000;
+    font-family: Raleway;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-bottom: 18px;
+}
+
+.facebook-share-image, .twitter-share-image, .pinterest-share-image {
+    width: 25px;
+    cursor: pointer;
+}
+
+.media-shares-amount {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 12px;
+    height: 20px;
+    align-items: flex-end;
+}
+
+.facebook-share-image:hover, .twitter-share-image:hover, .pinterest-share-image:hover {
+    opacity: 0.6;
+    transition: 0.25s all ease-in-out;
+}
+
+.post-text>*:first-child {
+    margin-top: 0;
+}
+
+.post-text>* {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.post-text p {
+    color: #a0a0a0;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.post-text {
+    line-height: 1.75;
+}
+
+.first-paragraph::first-letter {
+    --cnvs-drop-cap-color: #000;
+    --cnvs-drop-cap-dark-background: #000;
+    --cnvs-drop-cap-dark-color: #fff;
+    --cnvs-drop-cap-light-background: #f8f9fa;
+    --cnvs-drop-cap-light-color: inherit;
+    --cnvs-drop-cap-bordered-width: 1px;
+    --cnvs-drop-cap-bordered-color: #dee2e6;
+    border: #000000 solid 3px;
+    font-family: Cormorant Garamond;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-right: 32px;
+    margin-bottom: 3px;
+    color: var(--cnvs-drop-cap-color);
+    padding: 0rem 1.2rem;
+    float: left;
+    line-height: 1.5;
 }
